@@ -3,7 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/jquery.bxslider.css" />
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,200,100,' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:800,600,400,300,200,100,' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Page Title</title>
@@ -44,7 +44,7 @@
   <li>
     <div class="slide" id="slide6">
         <p id="mmm">Meteor, meteorite, or meteoroid?</p>
-        <p id="mmm-sub">Drag the rock up and down to see the difference between these terms.</p>
+        <p id="mmm-sub">Drag the rock up and down to see the differences between these terms.</p>
         <img src="img/earth.png" id="earth" />
         <div id="pep-container">
             <div class='pep'></div>
@@ -67,22 +67,30 @@
   
   <li>
     <div class="slide">
-      
-    </div>
+        <p id="quiz-title">Meteor Shower Quiz</p>
+        <p id="quiz-title-sub">Scroll to see all six questions.</p>
+            <div id="quiz">
+            </div>
+    </div>  
   </li>
   
   <li>
-    <div class="slide">
-        <iframe src="https://www.google.com/calendar/embed?title=Meteor%20Shower%20Peaks&amp;showPrint=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=phtkjv5ubfm2tuk9km1bu0j7b4%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="500" height="400" frameborder="0" scrolling="yes"></iframe>
-    </div>
+    <div class="slide" >
+        <div id="calendar-box">
+<iframe id="calendar" src="https://www.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=phtkjv5ubfm2tuk9km1bu0j7b4%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FNew_York" style=" border-width:0 " width="300" height="400" frameborder="0" scrolling="yes"></iframe>
+        </div>
+        <p id="credits">Created by Kate Boyd</p>
+        <p id="sources">Information from: Time and Date, American Meteor Society, Cool Cosmos by Caltech</p>
+    </div>  
   </li>
   
-
 </ul>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pep/0.4.0/jquery.pep.min.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
+<script src="js/tabletop.js" type="text/javascript"></script>
+<script src="js/news.js" type="text/javascript"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

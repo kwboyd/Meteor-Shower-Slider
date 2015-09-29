@@ -1,5 +1,4 @@
-var peppos = 0;
-
+//plugins used: Pep, Mother Jones News Quiz, bxSlider
 $(document).ready(function(){
   $(".bxslider").bxSlider({
     infiniteLoop: false,
@@ -25,8 +24,8 @@ $(document).ready(function(){
           document.getElementById("meteor").style.visibility="hidden";
           document.getElementById("meteorite").style.visibility="visible";
           document.getElementById("meteoroid").style.visibility="hidden";
-        
         }
       }
   });
+  var quiz = jQuery('#quiz').quiz('https://docs.google.com/spreadsheets/d/1J27d2mqtx7XcUa-w3X9-ElTXgsOBC6hp7ZEyga-oyAU/pubhtml');
 });
