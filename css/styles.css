@@ -1,0 +1,297 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+/*from http://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972*/
+
+p {
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.slide {
+    background-color: #051129;
+    height: 600px;
+}
+
+/*SLIDE 1*/
+
+#slide1 {
+    background: url(/static/project2/img/slide1.gif);
+    background-size: cover;
+    background-position: center;
+    max-width: 1366px;
+    height: 600px;
+    text-align: center;
+}
+
+#slide1-text {
+    position:absolute;
+    bottom: .5em;
+    left: 10%;
+    right: 10%;
+    font-size: 5em;
+}
+
+/*SLIDE 2*/
+
+#slide2-img {
+    position: absolute;
+    left: 9%;
+}
+
+#slide2-text {
+    position: absolute;
+    left: 50%;
+    right: 7%;
+    top: 10%;
+    font-size:2.5em;
+}
+
+@media (max-width:960px) {
+    #slide2-text {
+        left: 9%;
+        top: 70%;
+        font-size: 1.5em;
+    }
+    #slide2-img {
+        height: 60%;
+        width: auto;
+        left: 30%;
+        top: 5%;
+    }
+}
+
+@media (max-width:520px) {
+    #slide2-text {
+        top: 60%;
+    }
+    #slide2-img {
+        height: 60%;
+        width: auto;
+        left: 15%;
+    }
+}
+
+/*SLIDE 3*/
+
+#slide3-img {
+    position: absolute;
+    left: 2%;
+}
+
+#slide3-text {
+    position: absolute;
+    left: 50%;
+    right: 7%;
+    top: 10%;
+    font-size:2.5em;
+}
+
+@media (max-width:960px) {
+    #slide3-text {
+        left: 9%;
+        top: 70%;
+        font-size: 1.5em;
+    }
+    #slide3-img {
+        height: 60%;
+        width: auto;
+        left: 25%;
+        top: 2%;
+    }
+}
+
+@media (max-width:520px) {
+    #slide3-text {
+        top: 60%;
+    }
+    #slide3-img {
+        height: auto;
+        width: 100%;
+        left: 0%;
+    }
+}
+
+/*SLIDE 4*/
+#slide4-img {
+    position: absolute;
+    left: 0%;
+}
+
+#slide4-text {
+    position: absolute;
+    left: 50%;
+    right: 7%;
+    top: 10%;
+    font-size:2.5em;
+}
+
+@media (max-width:960px) {
+    #slide4-text {
+        left: 9%;
+        top: 60%;
+        font-size: 1.5em;
+    }
+    #slide4-img {
+        height: 60%;
+        width: auto;
+        left: 0%;
+    }
+}
+
+@media (max-width:520px) {
+    #slide4-text {
+        top: 50%;
+    }
+    #slide4-img {
+        height: 45%;
+        width: auto;
+        left: 0%;
+    }
+}
+
+/*SLIDE 5*/
+#slide5 {
+    background: url(/static/project2/img/slide5.gif);
+    background-size: cover;
+    background-position: center;
+    max-width: 1366px;
+    height: 600px;
+    text-align: center;
+}
+
+#slide5-img-1 {
+    float: left;
+    height: 600px;
+}
+
+#slide5-img-2 {
+    float: right;
+    height: 600px;
+}
+
+
+#slide5-text {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 25%;
+    font-size: 2em;
+}
+
+
+@media (max-width: 835px) {
+    #slide5-text {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    #slide5-img-1 {
+        position: absolute;
+        left: -55px;
+        clip: rect(0px,200px,600px,55px);
+    }
+    #slide5-img-2 {
+        position: absolute;
+        right: -55px;
+        clip: rect(0px,200px,600px,55px);
+    }
+    #slide5-text {
+        font-size: 1.25em;
+        top: 20%;
+    }
+}
+
+/*SLIDE 6*/
+
+#pep-container {
+  width: 100px;
+  height: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+}
+
+.pep {
+    background: url(/static/project2/img/rock.png) no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.definitions {
+    position: absolute;
+    font-size: 1.25em;
+}
+
+#meteoroid {
+    top: 150px;
+    right: 60%;
+    left: 50px;
+}
+
+#meteor {
+    top: 300px;
+    right: 50px;
+    left: 60%;
+    visibility: hidden;
+}
+
+#meteorite {
+    top: 375px;
+    right: 60%;
+    left: 50px;
+    visibility: hidden;
+}
+
+#earth {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 315px;
+    position: absolute;
+    width: 420px;
+}
+
+#mmm {
+    font-size: 2em;
+    text-align: center;
+    top: 15px;
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#mmm-sub {
+    font-size:1.5em;
+    text-align: center;
+    top: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 693px) {
+    #pep-container {
+        height: 430px;
+    }
+}
+
+@media (max-width: 480px) {
+    .definitions {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 437px) {
+    #pep-container {
+        height: 400px;
+    }
+    #earth {
+        top: 335px;
+    }
+}
+
+/*QUIZ*/
