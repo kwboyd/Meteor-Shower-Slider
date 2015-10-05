@@ -208,6 +208,7 @@ p {
 /*SLIDE 6*/
 
 #pep-container {
+    background: url(/static/project2/img/arrow.png) no-repeat;
   width: 100px;
   height: 445px;
   margin-left: auto;
@@ -339,6 +340,10 @@ h3 {
     width: 90%;
 }
 
+.title {
+    padding-left: 20px;
+}
+
 .possible_answer:hover {
 	background: #517693;
 	cursor: pointer;
@@ -373,6 +378,7 @@ h3 {
 	padding: 1em;
 	background-color: #3A5894;
         border-radius: 10px;
+        font-family: "Josefin Sans", Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 1.25em;
 	-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.65);
@@ -384,10 +390,10 @@ h3 {
 .question {
     border: 6px solid #3A5894;
     border-radius: 50px;
-    padding: 10px 20px 10px;
+    padding: 10px 10px 10px;
     background-color: #fff;
     color: #000;
-    padding-left: 40px;
+    padding-left: 15px;
 }
 
 /*multimedia styling*/
@@ -423,6 +429,7 @@ div.question > p {
     font-size: 1.3em;
     margin-bottom: 15px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -442,6 +449,7 @@ div.question > p {
     background-color: #F5F5F5;
 }
 
+
 @media (max-width: 420px) {
     .possible_answer {
         width: 70%;
@@ -450,7 +458,28 @@ div.question > p {
     .how_you_did {
         width: 80%;
     }
+    
+    div.question > p {
+        margin-left: 5px;
+        font-size: 1.15em;
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        font-size: 1.3em;
+        padding-left: 5px;
+    }
+    
+    h3 {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    .question {
+        padding-left: 25px;
+    }
 }
+
 /*http://cssdeck.com/labs/css3-webkit-vertical-scrollbars//*/
 
 /*SLIDE 8*/
@@ -458,6 +487,7 @@ div.question > p {
 #calendar {
     margin-left: 10px;
     margin-top: 15px;
+    overflow: hidden;
 }
 
 #calendar-box {

@@ -494,7 +494,7 @@
                 container_elem = $('<ul></ul>');
                 cover.append(container_elem);
                 container_elem.addClass('quiz');
-                container_elem.css('padding', '30px');
+                container_elem.css('padding', '10px');
             },
             update_how_you_did_element: function() {
                 var right_answers = 0;
