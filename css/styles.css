@@ -15,6 +15,10 @@ p {
     height: 600px;
 }
 
+.bxslider {
+    visibility: hidden;
+}
+
 /*SLIDE 1*/
 
 #slide1 {

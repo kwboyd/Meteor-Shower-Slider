@@ -3,7 +3,10 @@ $(document).ready(function(){
   $(".bxslider").bxSlider({
     infiniteLoop: false,
     hideControlOnEnd: true,
-    preventDefaultSwipeY: false
+    preventDefaultSwipeY: false,
+    onSliderLoad: function () {
+      $(".bxslider").css("visibility", "visible");
+    }
   });
   $('.pep').pep({
     axis: 'y',
